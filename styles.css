@@ -7,7 +7,7 @@
 }
 
 p {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
 }
 
 .logo {
@@ -182,4 +182,86 @@ p {
 .feature-wrapper p {
   line-height: 2;
   text-align: left;
+}
+
+/**************************/
+/* SECTION ABOUT */
+/**************************/
+.section--about {
+  padding: 15rem 0 0 0;
+}
+
+.about-item {
+  align-items: end;
+}
+
+.section-subtitle {
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 9.6rem;
+  font-weight: 700;
+  margin: 1.8rem 0 4rem 0;
+}
+
+.about-description-box,
+.vision-description-box {
+  font-size: inherit;
+  line-height: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.2rem;
+}
+
+.about-item:nth-child(2) {
+  margin: 20rem 0;
+  grid-template-columns: 1.5fr 2fr;
+}
+
+.different {
+  margin: 1.2rem 0 2.4rem 0;
+}
+
+h3 {
+  font-size: 6.4rem;
+}
+
+.copyright {
+  text-align: end;
+  margin: 15rem 0 2rem 0;
+  font-size: 1.4rem;
+  margin-right: 4rem;
+}
+
+/**************************/
+/* SECTION VISION */
+/**************************/
+.section--our-vision {
+  padding: 15rem 5rem;
+  background-color: var(--color-brand);
+}
+
+.our-vision-header {
+  position: absolute;
+  top: 5rem;
+  left: 5rem;
+}
+
+.our-vision-wrapper {
+  position: relative;
+  max-width: 150rem;
+  border-radius: 2rem;
+  border: 2px solid #333;
+  padding: 5rem;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1.5fr 2fr;
+}
+
+h4 {
+  font-size: 5.6rem;
+  font-weight: 700;
+  width: 60%;
 }
