@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="general.css">
   <link rel="stylesheet" href="styles.css">
   <title>PayUp</title>
 </head>
@@ -12,37 +13,41 @@
   <main>
     <section class="section section--hero">
       <header>
-        <nav class="nav">
+        <nav class="main-nav">
           <div class="logo">
             <img src="/assets/images/logo.png" alt="logo">
           </div>
 
-          <ul class="nav__list">
-            <li class="nav__link"><a href="#" class="nav__link">About</a></li>
-            <li class="nav__link"><a href="#" class="nav__link">Visi`on</a></li>
-            <li class="nav__link"><a href="#" class="nav__link">Team</a></li>
-            <li class="nav__link"><a href="#" class="nav__link">Contact</a></li>
+          <ul class="main-nav__list">
+            <li class="main-nav__link"><a href="#">About</a></li>
+            <li class="main-nav__link"><a href="#">Vision</a></li>
+            <li class="main-nav__link"><a href="#">Team</a></li>
+            <li class="main-nav__link"><a href="#">Contact</a></li>
           </ul>
           <div class="nav__ctas-wrapper">
-            <button class="btn btn--light">Log In</button>
+            <button class="btn btn--light margin-right-sm">Log In</button>
             <button class="btn btn--dark">Sign Up</button>
           </div>
         </nav>
       </header>
 
-      <div>
-        <p class="h2">Do you have a bill?</p>
-        <h1 class="headline">Do it easily with us.</h1>
-        <p class="subheadline"><strong>Pay Up</strong> is a platform that allows you settle invoices anywhere conveniently</p>
-        <div><img src="/assets/images/hero-img.png" alt="hero illustration"></div>
-        <div class="cta-input-wrapper">
-          <input class="cta-input" type="text">
-          <button class="btn btn-dark"></button>
+      <div class="container">
+        <div class="text-container">
+          <p class="h2">Do you have a bill?</p>
+          <h1 class="headline">Do it easily with us.</h1>
+          <p class="subheadline"><strong>Pay Up</strong> is a platform that allows you settle invoices anywhere conveniently</p>
         </div>
-      </div>
-      <div class="features-grid">
-        <div class="container">
 
+        <div class="hero-img"><img src="/assets/images/hero-img.png" alt="hero illustration"></div>
+        <div class="cta-input-wrapper">
+
+          <input placeholder="Enter your email" class="cta-input" type="text">
+          <button class="btn btn--dark">Get Started</button>
+          <p>Creating a <strong>financial solution</strong> for our currency to thrive.</p>
+
+
+        </div>
+        <div class="features-grid grid--4-cols">
           <div class="feature-wrapper">
             <div class="feature-icon-wrapper">
               <img src="/assets/images/icons/features/1.svg" alt="feature icon">
@@ -69,6 +74,7 @@
           </div>
 
         </div>
+
       </div>
     </section>
 
