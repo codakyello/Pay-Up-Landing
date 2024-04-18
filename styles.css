@@ -96,17 +96,17 @@ p {
   -moz-transform: translate(50%, 50%);
   -ms-transform: translate(50%, 50%);
   -o-transform: translate(50%, 50%);
-  --size: 300px;
+  --size: 430px;
   width: var(--size);
   height: var(--size);
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: hsla(280, 69%, 64%, 0.6);
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-  filter: blur(70px);
-  -webkit-filter: blur(70px);
+  filter: blur(100px);
+  -webkit-filter: blur(100px);
 }
 .bg-shadow-blur > * {
   position: relative;
