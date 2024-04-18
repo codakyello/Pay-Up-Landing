@@ -265,3 +265,18 @@ h4 {
   font-weight: 700;
   width: 60%;
 }
+
+/**************************/
+/* SECTION VISION */
+/**************************/
+.section--our-team {
+  padding: 15rem 0 10rem 10rem;
+}
+.team-member {
+  width: 30rem;
+  height: 45rem;
+}
+.team-list-grid {
+  display: flex;
+  overflow-x: scroll;
+}
