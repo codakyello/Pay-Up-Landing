@@ -97,6 +97,10 @@ Medium: 11px
   --color-white: #fff;
 }
 
+/**************************/
+/* GLOBAL RESET */
+/**************************/
+
 *,
 *::before,
 *::after {
@@ -105,10 +109,14 @@ Medium: 11px
   box-sizing: border-box;
 }
 
+*:focus-visible {
+  outline: none;
+}
+
 html {
-  /* font-size: 10px; */
   /* By default 1rem = 12pt = 16px = 100% */
   /* we want to use rem as 1rem === 10px */
+  /* Rem inherits from its parent so by setting Font-size: 10px then 1rem === 10px*/
   /* we need it in percentage for user accessibility */
   /* Convert 10px to % */
   /* 10px / 16px = 0.625 = 62.5% */
@@ -128,6 +136,10 @@ img {
   width: 100%;
 }
 
+/**************************/
+/* GENRAL REUSABLE COMPONENTS */
+/**************************/
+
 .container {
   max-width: 120rem;
   margin: 0 auto;
@@ -139,7 +151,8 @@ img {
   border-radius: 1rem;
   padding: 1rem 3.8rem;
   font-weight: 700;
-  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.086);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+
   cursor: pointer;
 }
 
@@ -175,10 +188,6 @@ img {
 
 .center-text {
   text-align: center;
-}
-
-*:focus-visible {
-  outline: none;
 }
 
 strong {

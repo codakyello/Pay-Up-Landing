@@ -14,7 +14,24 @@ p {
   width: 8.4rem;
 }
 
-.main-nav {
+/**************************/
+/* HEADER */
+/**************************/
+
+.header {
+  display: flex;
+  align-items: center;
+  background-color: var(--color-light--1);
+  height: 7.2rem;
+  padding: 0 3rem;
+  position: relative;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+  margin: 2rem 2rem 4.5rem 2rem;
+  border-radius: 4rem;
+  gap: 6rem;
+}
+
+.sticky .header {
   position: fixed;
   top: 2rem;
   left: 2rem;
@@ -22,11 +39,15 @@ p {
   height: 7.2rem;
   display: flex;
   border-radius: 4rem;
-  gap: 6rem;
   background-color: var(--color-light--1);
   align-items: center;
-  padding: 0 2rem;
+  z-index: 999;
+  backdrop-filter: blur(10px);
 }
+
+/**************************/
+/* NAVIGATION */
+/**************************/
 
 .main-nav__list {
   font-size: 1.8rem;
@@ -35,21 +56,30 @@ p {
   list-style: none;
 }
 
-.main-nav__link {
-}
-
-.main-nav__link a {
+.main-nav__link:link,
+.main-nav__link:visited {
+  display: inline-block;
   font-weight: 500;
   text-decoration: none;
   color: var(--color-dark--0);
+  transition: all 0.4s;
+}
+
+.main-nav__link:hover,
+.main-nav__link:active {
+  font-size: 2rem;
 }
 
 .nav__ctas-wrapper {
   margin-left: auto;
 }
 
+/**************************/
+/* HERO SECTION */
+/**************************/
+
 .section--hero {
-  padding: 12rem 0 5rem 0;
+  padding: 0.5rem 0 5rem 0;
   text-align: center;
   background-color: var(--color-brand);
 }
@@ -84,17 +114,41 @@ p {
   width: 3.8rem;
 }
 
-.cta-input {
-  width: 29.2rem;
-  padding: 1rem 2rem;
-  border: none;
-  border-radius: 1rem;
-  margin: 1rem;
+/* CTA */
+.cta-input-wrapper {
+  display: flex;
+  align-items: end;
+  width: 40rem;
+  margin: 0 auto 1rem auto;
 }
 
 .cta-input-wrapper button {
-  margin-left: -4rem;
+  width: 40%;
 }
+
+.cta-input {
+  width: 60%;
+  padding: 1rem 2rem 1rem 2rem;
+  border: none;
+  border-radius: 1rem;
+}
+
+.cta-input-wrapper button {
+  margin-left: -1rem;
+  width: 40%;
+  transition: all 1s;
+  right: auto;
+}
+.btn-grow .cta-input-wrapper {
+  position: relative;
+}
+.btn-grow .cta-input-wrapper button {
+  position: absolute;
+  width: 100%;
+  right: 0;
+}
+
+/* FEATURES */
 
 .features-grid {
   display: grid;
@@ -124,6 +178,7 @@ p {
 .feature-icon-wrapper img {
   width: 70%;
 }
+
 .feature-wrapper p {
   line-height: 2;
   text-align: left;
