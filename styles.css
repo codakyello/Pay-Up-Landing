@@ -96,6 +96,7 @@ p {
 .bg-shadow-blur {
   position: relative;
 }
+
 .bg-shadow-blur::before {
   content: "";
   position: absolute;
@@ -237,7 +238,7 @@ p {
 /* SECTION ABOUT */
 /**************************/
 .section--about {
-  padding: 15rem 0 0 0;
+  padding: 8rem 0 0 0;
 }
 
 .about-item {
@@ -265,7 +266,7 @@ h2 {
 }
 
 .about-item:nth-child(2) {
-  margin: 20rem 0;
+  margin: 10rem 0;
   grid-template-columns: 1.5fr 2fr;
 }
 
