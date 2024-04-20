@@ -6,10 +6,6 @@
   box-sizing: border-box;
 }
 
-p {
-  font-size: 1.6rem;
-}
-
 .logo {
   width: 8.4rem;
 }
@@ -130,16 +126,17 @@ p {
 
 .h2 {
   font-size: 3.2rem;
+  font-weight: 600;
 }
 
 .headline {
-  font-size: 3.2rem;
+  font-size: 5.6rem;
   font-weight: 700;
   letter-spacing: 3px;
 }
 
 .subheadline {
-  font-size: 1.8rem;
+  font-weight: 600;
 }
 
 .text-container {
@@ -230,6 +227,7 @@ p {
 }
 
 .feature-wrapper p {
+  font-weight: 500;
   line-height: 2;
   text-align: left;
 }
