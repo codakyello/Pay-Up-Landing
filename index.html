@@ -20,10 +20,10 @@
 
         <nav class="main-nav">
           <ul class="main-nav__list">
-            <li><a class="main-nav__link" href="#">About</a></li>
-            <li><a class="main-nav__link" href="#">Vision</a></li>
-            <li><a class="main-nav__link" href="#">Team</a></li>
-            <li><a class="main-nav__link" href="#">Contact</a></li>
+            <li><a class="main-nav__link" href="#section--about">About</a></li>
+            <li><a class="main-nav__link" href="#section--our-vision">Vision</a></li>
+            <li><a class="main-nav__link" href="#section--our-team">Team</a></li>
+            <li><a class="main-nav__link" href="#section--contact">Contact</a></li>
           </ul>
         </nav>
 
@@ -34,7 +34,7 @@
       </header>
 
       <div class="container">
-        <div class="bg-shadow-blur">
+        <div class="bg-shadow-blur hero-content-box">
           <div class="text-container">
             <p class="h2">Do you have a bill?</p>
             <h1 class="headline">Do it easily with us.</h1>
@@ -81,7 +81,7 @@
       </div>
     </section>
 
-    <section class="section section--about">
+    <section class="section section--about" id="section--about">
       <div class="container container--sm">
         <div class="about-item grid grid--2-cols">
           <div>
@@ -111,12 +111,12 @@
           </div>
         </div>
 
-        <p class="copyright"><span>&copy;</span>Copyright 2024.</p>
+        <p class="copyright"><span>&copy;</span>Copyright <span class="year">2024.</span></p>
       </div>
 
 
     </section>
-    <section class="section section--our-vision">
+    <section class="section section--our-vision" id="section--our-vision">
 
       <div class="container our-vision-wrapper bg-shadow-blur">
         <p class="our-vision-header" class="section-subtitle section-subtitle--our-vision">Our Vision</p>
@@ -133,7 +133,7 @@
 
       </div>
     </section>
-    <section class="section section--our-team">
+    <section class="section section--our-team" id="section--our-team">
       <div>
         <h5>Our Team</h5>
         <p class="team-subtitle">Our founding team and creative members.</p>
@@ -182,7 +182,7 @@
           "We're a tight-knit team of passionate believers, relentless hard workers, and fearless dreamers who thrive on pushing the boundaries of what's possible. Together, we embrace challenges that others might deem impossible, fueled by our shared dedication to innovation and unwavering determination."
         </p>
     </section>
-    <section class="section section--faq">
+    <section class="section section--faq" id="section--faq">
       <div class="container">
         <div>
           <img src="/assets/images/icons/faq.svg" alt="frequently asked questions">
@@ -238,7 +238,7 @@
               <a href="#" class="nav-link">Why us</a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav-link">Team</a>
+              <a href="#section--our-team" class="nav-link">Team</a>
             </li>
             <li class="nav__item">
               <a href="#" class="nav-link">Press</a>

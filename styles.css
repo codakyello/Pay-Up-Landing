@@ -26,22 +26,24 @@ p {
   padding: 0 3rem;
   position: relative;
   box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
-  margin: 2rem 2rem 4.5rem 2rem;
+  margin: 2rem 2rem 0 2rem;
   border-radius: 4rem;
   gap: 6rem;
 }
 
 .sticky .header {
+  margin: 0;
   position: fixed;
-  top: 2rem;
-  left: 2rem;
-  right: 2rem;
-  height: 7.2rem;
+  border-radius: 0;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+
   display: flex;
-  border-radius: 4rem;
   background-color: var(--color-light--1);
   align-items: center;
   z-index: 999;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
   backdrop-filter: blur(10px);
 }
 
@@ -83,6 +85,15 @@ p {
   text-align: center;
   background-color: var(--color-brand);
 }
+
+.hero-content-box {
+  margin-top: 4.5rem;
+}
+
+.sticky .hero-content-box {
+  margin-top: 13.7rem;
+}
+
 .bg-shadow-blur {
   position: relative;
 }
@@ -310,7 +321,7 @@ h4 {
 /* SECTION VISION */
 /**************************/
 .section--our-team {
-  padding: 20rem 0 10rem 10rem;
+  padding: 13rem 0 10rem 10rem;
 }
 
 h5 {
@@ -347,20 +358,17 @@ h5 {
 .team-member__details {
   display: flex;
   flex-direction: column;
-  gap: 1.2rem;
+  gap: 0.7rem;
   margin-top: 2rem;
 }
 
 .team-member__position {
-  color: #555;
+  color: #777;
   font-size: 1.4rem;
 }
 
 .team-desc {
-  margin-top: 7rem;
+  margin-top: 5rem;
   width: 60%;
   line-height: 3.2rem;
-}
-
-.team-list-grid {
 }
