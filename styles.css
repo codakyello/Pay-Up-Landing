@@ -130,19 +130,20 @@
 }
 
 .headline {
-  font-size: 5.6rem;
+  font-size: 7.6rem;
   font-weight: 700;
   letter-spacing: 3px;
 }
 
 .subheadline {
   font-weight: 600;
+  margin-top: 1rem;
 }
 
 .text-container {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 0.7rem;
 }
 
 .feature-icon-wrapper {
@@ -366,6 +367,7 @@ h5 {
 }
 
 .team-desc {
+  margin-top: 5rem;
   width: 60%;
   line-height: 3.2rem;
 }
