@@ -265,10 +265,13 @@ h2 {
 }
 
 .about-item:nth-child(2) {
-  margin: 20rem 0;
+  margin: 25rem 0;
   grid-template-columns: 1.5fr 2fr;
 }
 
+.mobile {
+  margin-bottom: -5rem;
+}
 .different {
   margin: 1.2rem 0 2.4rem 0;
 }
