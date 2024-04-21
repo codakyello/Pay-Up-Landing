@@ -18,7 +18,7 @@
   display: flex;
   align-items: center;
   background-color: var(--color-light--1);
-  height: 7.2rem;
+  height: 6.4rem;
   padding: 0 3rem;
   position: relative;
   box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
@@ -130,13 +130,13 @@
 }
 
 .headline {
-  font-size: 7.6rem;
+  font-size: 5.6rem;
   font-weight: 700;
   letter-spacing: 3px;
 }
 
 .subheadline {
-  font-weight: 600;
+  font-weight: 500;
   margin-top: 1rem;
 }
 
@@ -250,9 +250,9 @@
 }
 
 h2 {
-  font-size: 9.6rem;
+  font-size: 5.6rem;
   font-weight: 700;
-  margin: 1.8rem 0 4rem 0;
+  margin: 1rem 0 4rem 0;
 }
 
 .about-description-box,
@@ -265,7 +265,7 @@ h2 {
 }
 
 .about-item:nth-child(2) {
-  margin: 10rem 0;
+  margin: 20rem 0;
   grid-template-columns: 1.5fr 2fr;
 }
 
