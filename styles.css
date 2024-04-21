@@ -371,6 +371,7 @@ h5 {
 }
 
 .scroll-up-box {
+  cursor: pointer;
   border-radius: 50%;
   border: 1px solid #000;
   display: flex;
@@ -382,5 +383,5 @@ h5 {
   position: absolute;
   right: 2.5rem;
   bottom: 15rem;
-  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.105);
 }

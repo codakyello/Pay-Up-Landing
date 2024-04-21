@@ -16,6 +16,10 @@ signUpEL.addEventListener("click", (e) => {
 
 const allLinks = document.querySelectorAll("a:link");
 
+const scrollEl = document.querySelector(".scroll-up");
+
+// Write the scrollup functionality here.
+
 allLinks.forEach(function (link) {
   link.addEventListener("click", function (e) {
     e.preventDefault();
