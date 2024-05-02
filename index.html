@@ -13,7 +13,8 @@
 
 <body>
   <main>
-    <section class="section section--hero">
+
+    <section class="section section--hero ">
       <header class="header">
         <div class="logo">
           <img src="/assets/images/logo.png" alt="logo">
@@ -30,57 +31,64 @@
 
         <div class="nav__ctas-wrapper">
           <button class="btn btn--light margin-right-sm">Log In</button>
-          <button class="btn btn--dark">Sign Up</button>
+          <button class="btn btn--dark border-ring">Sign Up</button>
         </div>
       </header>
 
+
       <div class="container">
-        <div class="bg-shadow-blur hero-content-box">
-          <div class="text-container">
+        <div class="bg-shadow-blur hero-content-box grid grid--2-cols">
+          <div class="hero-text-container">
             <p class="h2">Do you have a bill?</p>
             <h1 class="headline">Do it easy with us.</h1>
             <p class="subheadline"><strong>Pay Up</strong> is a platform that allows you settle invoices anywhere conveniently</p>
+
+            <form class="cta-input-wrapper">
+              <input placeholder="Enter your email" class="cta-input" type="email">
+              <button class="btn btn--dark">Get Started</button>
+            </form>
+            <p class="cta-description">Creating a <strong class="cta-strong">financial solution</strong> for our currency to thrive.</p>
           </div>
-          <div class="hero-img"><img src="/assets/images/hero-img.png" alt="hero illustration"></div>
-          <form class="cta-input-wrapper">
-            <input placeholder="Enter your email" class="cta-input" type="email">
-            <button class="btn btn--dark">Get Started</button>
-          </form>
-          <p class="cta-description">Creating a <strong class="cta-strong">financial solution</strong> for our currency to thrive.</p>
+          <div class="hero-img"><img src="/assets/images/mobile.png" alt="hero illustration"></div>
+
         </div>
+      </div>
 
-
-
+      <div class="container">
         <div class="features-grid grid--4-cols">
-          <div class="feature-wrapper">
-            <div class="feature-icon-wrapper">
-              <img src="/assets/images/icons/features/1.svg" alt="feature icon">
+          <div class="feature-wrapper ">
+            <div class="feature-icon-wrapper feature-icon-wrapper--1">
+              <img class="feature-icon" src="/assets/images/icons/features/bill.svg" alt="feature icon">
             </div>
-            <p>With our peer-peer system, footing bills, invoices or payments have been made easier and safer. All you need to do is fund your Pay Up account with NGN and you are all set.</p>
+            <p>With our peer-peer system, footing bills, invoices have been made easier. All you need to do is fund your Pay Up account with NGN .</p>
           </div>
-          <div class="feature-wrapper">
-            <div class="feature-icon-wrapper">
-              <img src="/assets/images/icons/features/2.svg" alt="feature icon">
+          <div class="feature-wrapper ">
+            <div class="feature-icon-wrapper feature-icon-wrapper--2">
+              <img class="feature-icon" src="/assets/images/icons/features/finance.svg" alt="feature icon">
             </div>
             <p>You can now easily save in equivalents to any currency you like and also watch your equivalents move according to the steady market rates and also pull out on will.</p>
           </div>
-          <div class="feature-wrapper">
-            <div class="feature-icon-wrapper">
-              <img src="/assets/images/icons/features/3.svg" alt="feature icon">
+          <div class="feature-wrapper ">
+            <div class="feature-icon-wrapper feature-icon-wrapper--3">
+              <img class="feature-icon" src="/assets/images/icons/features/creditcard-add.svg" alt="feature icon">
             </div>
             <p>Create your own virtual card and experience ease while shopping online with no limitations depending on the plan you choose. </p>
           </div>
-          <div class="feature-wrapper">
-            <div class="feature-icon-wrapper">
-              <img src="/assets/images/icons/features/4.svg" alt="feature icon">
+          <div class="feature-wrapper ">
+            <div class="feature-icon-wrapper feature-icon-wrapper--4">
+              <img class="feature-icon" src="/assets/images/icons/features/gift.svg" alt="feature icon">
             </div>
             <p>Easily make transfers from your Pay Up account to a friends account, or assist a friend in footing a bill. Gift your loved ones and make them smile.</p>
           </div>
 
         </div>
-
       </div>
+
+
+
     </section>
+
+
 
     <section class="section section--about" id="section--about">
       <div class="container container--sm">
@@ -94,10 +102,14 @@
             </div>
 
           </div>
-          <div><img class="mobile" src="/assets/images/mobile.png" alt="about us"></div>
+          <div class="rubix-container">
+            <span class="naira naira--1">&#8358;</span>
+            <span class="naira naira--2">&#8358;</span>
+            <img class="rubix" src="/assets/images/hero-img.png" alt="about us">
+          </div>
         </div>
-        <div class="about-item grid">
-          <div><img src="/assets/images/about-2.png" alt="about us"></div>
+        <div class="about-item grid grid--2-cols">
+          <div class="plane-container"><img class="plane" src="/assets/images/paper-plane.png" alt="about us"></div>
           <div>
             <h3 class="section-subheading-logo">How?</h3>
             <p class="different"><strong>What makes us different?</strong></p>
@@ -137,51 +149,95 @@
     <section class="section section--our-team" id="section--our-team">
       <div>
         <h5>Our Team</h5>
-        <p class="team-subtitle">Our founding team and creative members.</p>
+        <p class="team-subtitle">Meet the amazing team.</p>
         <div class="team-list">
           <div class="team-member">
-            <img src="/assets/images/team/1.png" alt="team member">
             <div class="team-member__details">
               <p class="team-member__name">Daniel Johnson</p>
-              <p class="team-member__position">CEO</p>
+              <p class="team-member__position">Product Lead/Designer</p>
             </div>
+
+            <div class="team-img-box team-img-box--1">
+            </div>
+
           </div>
+
           <div class="team-member">
-            <img src="/assets/images/team/2.png" alt="team member">
             <div class="team-member__details">
-              <p class="team-member__name">Olaoluwa Thompson</p>
-              <p class="team-member__position">CTO</p>
+              <p class="team-member__name">Ruro Thompson</p>
+              <p class="team-member__position">Full Stack Developer</p>
             </div>
-          </div>
-          <div class="team-member">
-            <img src="/assets/images/team/3.png" alt="team member">
-            <div class="team-member__details">
-              <p class="team-member__name">Ewaoluwa Dada</p>
-              <p class="team-member__position">Documentation Specialist</p>
+
+            <div class="team-img-box team-img-box--2">
             </div>
+
+
           </div>
+
           <div class="team-member">
-            <img src="/assets/images/team/4.png" alt="team member">
-            <div class="team-member__details">
-              <p class="team-member__name">Fiyin Abdul</p>
-              <p class="team-member__position">FrontEnd Developer</p>
-            </div>
-          </div>
-          <div class="team-member">
-            <img src="/assets/images/team/5.png" alt="team member">
             <div class="team-member__details">
               <p class="team-member__name"> Esther Oviawe</p>
               <p class="team-member__position">Project Manager</p>
             </div>
+
+            <div class="team-img-box team-img-box--3">
+            </div>
+          </div>
+
+
+          <div class="team-member">
+            <div class="team-member__details">
+              <p class="team-member__name">Fiyin Abdul</p>
+              <p class="team-member__position">FrontEnd Developer</p>
+            </div>
+
+            <div class="team-img-box team-img-box--4">
+            </div>
+          </div>
+
+          <div class="team-member">
+            <div class="team-member__details">
+              <p class="team-member__name"> Akpan Emmanuel</p>
+              <p class="team-member__position">Full-stack Developer</p>
+            </div>
+
+            <div class="team-img-box team-img-box--5">
+            </div>
           </div>
 
 
 
+          <div class="team-member">
+            <div class="team-member__details">
+              <p class="team-member__name">Ewaoluwa Dada</p>
+              <p class="team-member__position">Documentation Specialist</p>
+            </div>
+
+            <div class="team-img-box team-img-box--6">
+
+            </div>
+          </div>
+
+          <div class="team-member">
+            <div class="team-member__details">
+              <p class="team-member__name"> Sope Abdul</p>
+              <p class="team-member__position">Product Designer</p>
+            </div>
+
+            <div class="team-img-box team-img-box--7">
+            </div>
+          </div>
         </div>
 
-        <p class="team-desc">
-          "We're a tight-knit team of passionate believers, relentless hard workers, and fearless dreamers who thrive on pushing the boundaries of what's possible. Together, we embrace challenges that others might deem impossible, fueled by our shared dedication to innovation and unwavering determination."
-        </p>
+
+
+
+
+      </div>
+
+      <p class="team-desc">
+        "We're a tight-knit team of passionate believers, relentless hard workers, and fearless dreamers who thrive on pushing the boundaries of what's possible. Together, we embrace challenges that others might deem impossible, fueled by our shared dedication to innovation and unwavering determination."
+      </p>
     </section>
     <section class="section section--faq" id="section--faq">
       <div class="container">

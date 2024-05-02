@@ -55,6 +55,12 @@ Medium: 11px
 - Spacing system (px)
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 */
+@font-face {
+  font-family: "Roobert";
+  src: url("./fonts/roobert/RoobertLight.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
 
 @font-face {
   font-family: "Roobert";
@@ -85,11 +91,25 @@ Medium: 11px
 }
 
 :root {
+  --bg-dark: #111417;
   --color-brand: #f8f663;
+
+  --color-green--1: #2ac44b;
+  --color-green--2: #2ac44b33;
+
+  --color-blue--1: #4267df;
+  --color-blue--2: #4267df33;
+
+  --color-yellow--1: #ffff25;
+  --color-yellow--2: #ffff2533;
+
+  --color-purple--1: #a851fff5;
+  --color-purple--2: #a851fe33;
 
   --color-dark--0: #000;
   --color-dark--1: #333;
-  --color-dark--1: #555;
+  --color-dark--2: #555;
+  --color-dark--3: #1e2329;
 
   --color-light--1: rgba(252, 251, 199, 0.42);
   --color-light--2: #ececec;
@@ -128,7 +148,8 @@ body {
   font-family: "Roobert", sans-serif;
   line-height: 1;
   font-weight: 400;
-  color: #000;
+  color: #fff;
+  background-color: var(--bg-dark);
   font-size: 1.6rem;
   position: relative;
 }
@@ -148,7 +169,6 @@ img {
 }
 
 .btn {
-  border: 1px solid var(--color-dark--0);
   border-radius: 1rem;
   padding: 1.2rem 5rem;
   font-weight: 700;
@@ -164,6 +184,7 @@ img {
 .btn--dark {
   background-color: var(--color-dark--0);
   color: var(--color-brand);
+  border: 1px solid var(--color-brand);
 }
 
 .grid {
@@ -197,5 +218,5 @@ img {
 }
 
 strong {
-  font-weight: 700;
+  font-weight: 600;
 }
