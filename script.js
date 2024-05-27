@@ -70,3 +70,13 @@ const obs = new IntersectionObserver(
   }
 );
 obs.observe(sectionHeroEl);
+
+function toggleActive(section) {
+
+  let listOpt = document.querySelectorAll('.faqActive');
+  listOpt.forEach(function (item) {
+    item.classList.remove('faqActive');
+  });
+
+  section.classList.add('faqActive');
+}
