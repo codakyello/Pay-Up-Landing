@@ -32,7 +32,7 @@
   top: 0;
   bottom: 0;
   display: flex;
-  background-color: #101316F2;
+  background-color: #101316f2;
   align-items: center;
   z-index: 999;
   box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
@@ -359,7 +359,7 @@ h4 {
 /* SECTION TEAM */
 /**************************/
 .section--our-team {
-  padding: 16.8rem 0 10rem 10rem;
+  padding: 16.8rem 0 10rem 0rem;
   text-align: center;
   max-width: 110rem;
   margin: 0 auto;
@@ -474,8 +474,6 @@ h5 {
   width: 80px;
 }
 
-
-
 .avail {
   gap: 4rem;
   border-radius: 10px;
@@ -510,7 +508,7 @@ ul {
   gap: 4rem;
   border-radius: 10px;
   padding: 25px;
-  background-color: #1E2329;
+  background-color: #1e2329;
   margin-top: 5px;
 }
 
@@ -559,19 +557,17 @@ ul {
 .diff {
   color: var(--color-brand);
   margin-bottom: 20px;
-
 }
 
 .btn--outline {
   max-width: 150px;
   padding: 10px;
   margin-left: 27rem;
-  border: 1px solid #F8F663;
+  border: 1px solid #f8f663;
   border-radius: 10px;
-  color: #F8F663;
-  background: #101316F2;
+  color: #f8f663;
+  background: #101316f2;
   letter-spacing: 5px;
-
 }
 
 .btn--outline:hover {
@@ -591,15 +587,13 @@ ul {
   margin-left: 1rem;
   justify-content: space-between;
   padding: 20px;
-  background-color: #1E2329;
+  background-color: #1e2329;
 }
 
 .logo-foot {
   width: 8.4rem;
   margin-right: 20px;
 }
-
-
 
 .footer-con {
   flex: 1;
@@ -609,7 +603,6 @@ ul {
   padding: 10px;
   width: 100%;
 }
-
 
 .nav__list {
   list-style-type: none;
@@ -628,7 +621,7 @@ ul {
 
 .nav-link {
   text-decoration: none;
-  color: #F8F663;
+  color: #f8f663;
   margin-right: 10px;
 }
 
