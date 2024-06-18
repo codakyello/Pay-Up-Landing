@@ -80,3 +80,14 @@ function toggleActive(section) {
 
   section.classList.add('faqActive');
 }
+
+// scroll to top
+const scrollUpBox = document.querySelector('.scroll-up-box');
+const scrollUp = document.querySelector('.scroll-up');
+
+scrollUp.addEventListener("click", function () {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+});
