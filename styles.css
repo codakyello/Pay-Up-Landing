@@ -41,7 +41,9 @@
 /**************************/
 /* NAVIGATION */
 /**************************/
-
+main{
+  padding: 10px;
+}
 .main-nav {
   margin-left: auto;
 }
@@ -456,7 +458,7 @@ h5 {
 .scroll-up-box {
   cursor: pointer;
   border-radius: 50%;
-  border: 1px solid #ffffff;
+  border: 1px solid black;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -465,7 +467,9 @@ h5 {
   z-index: 99;
   position: absolute;
   right: 2.5rem;
-  bottom: 2rem;
+  background-color: white;
+  color: black;
+  bottom: 5px;
   box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.105);
 }
 
@@ -655,7 +659,7 @@ ul {
 /**************************/
 /* FOOTER SECTION */
 /**************************/
-.footer{
+.footer {
   margin-top: 200px;
   width: 100%;
   height: auto;
@@ -665,7 +669,8 @@ ul {
   display: flex;
   flex-direction: column;
 }
-.foot1{
+
+.foot1 {
   width: 100%;
   height: 613px;
   text-align: center;
@@ -677,7 +682,8 @@ ul {
   align-items: center;
   gap: 30px;
 }
-.footbutton{
+
+.footbutton {
   width: 284px;
   height: 56px;
   color: #F8F663;
@@ -686,29 +692,34 @@ ul {
   border-radius: 10px;
   cursor: pointer;
 }
-.footbutton:hover{
+
+.footbutton:hover {
   background-color: #F8F663;
   color: #111417;
   border: 1px solid #111417;
 }
-.foot2{
+
+.foot2 {
   width: 100%;
   height: auto;
   display: flex;
   background-color: #F8F663;
 }
-.foot2 a{
+
+.foot2 a {
   color: #F8F663;
   text-decoration: none;
 }
-.foot2 .logo{
+
+.foot2 .logo {
   width: 218px;
   height: 218px;
   background-color: #111417;
   border: 1px solid #F8F663;
   border-bottom-right-radius: 10px;
 }
-.partners{
+
+.partners {
   height: 174px;
   width: 1121px;
   display: flex;
@@ -718,7 +729,8 @@ ul {
   color: #F8F663;
   align-items: center;
 }
-.pitems{
+
+.pitems {
   width: 100%;
   display: flex;
   padding: 100px;
@@ -726,7 +738,8 @@ ul {
   color: #F8F663;
   align-items: center;
 }
-.titems{
+
+.titems {
   padding-top: 10px;
   gap: 20px;
   max-width: 1100px;
@@ -737,11 +750,13 @@ ul {
   padding-left: 250px;
   padding-right: 250px;
 }
-.titems a{
+
+.titems a {
   color: black;
   text-decoration: none;
 }
-.follow{
+
+.follow {
   width: 175px;
   height: 174px;
   border: 1px solid #F8F663;
@@ -749,7 +764,8 @@ ul {
   display: flex;
   flex-direction: column;
 }
-.followtext{
+
+.followtext {
   height: 50%;
   border-bottom: 1px solid #F8F663;
   font-size: 16px;
@@ -759,31 +775,253 @@ ul {
   align-items: center;
   justify-content: center;
 }
-.socials{
+
+.socials {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   padding-top: 25px;
 }
-.arrowleftup{
+
+.arrowleftup {
   position: absolute;
   bottom: 750px;
   left: 5px;
 }
 
-.arrowleftdown{
+.arrowleftdown {
   position: absolute;
   bottom: 220px;
   left: 5px;
 }
 
-.arrowrightup{
+.arrowrightup {
   position: absolute;
   bottom: 750px;
   right: 5px;
 }
-.arrowrightdown{
+
+.arrowrightdown {
   position: absolute;
   bottom: 220px;
   right: 5px;
+}
+
+/** mobile screens **/
+@media (max-width: 768px) {
+  .footer {
+    max-width: fit-content;
+    margin: 5px;
+  }
+  .foot2{
+    display: flex;
+    flex-direction: column;
+  }
+  .foot2 .logo {
+    display: none;
+  }
+
+  .termsP{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .partners {
+    width: 100%;
+    height: auto;
+  }
+
+  .pitems {
+    width: 100%;
+    padding: 50px;
+    justify-content: space-between;
+    color: #F8F663;
+    align-items: center;
+  }
+
+  .titems {
+    padding-top: 10px;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    color: black;
+    align-items: center;
+    padding-left: 250px;
+    padding-right: 250px;
+  }
+
+  .follow{
+    width: 100%;
+  }
+
+  .arrowleftup {
+    position: absolute;
+    bottom: 900px;
+    left: 15px;
+  }
+  
+  .arrowleftdown {
+    position: absolute;
+    bottom: 370px;
+    left: 15px;
+  }
+  
+  .arrowrightup {
+    position: absolute;
+    bottom: 900px;
+    right: 11px;
+  }
+  
+  .arrowrightdown {
+    position: absolute;
+    bottom: 370px;
+    right: 11px;
+  }
+}
+
+/** iPad screens **/
+@media (max-width: 1024px) {
+  .footer {
+    max-width: fit-content;
+    margin: 5px;
+  }
+  .foot2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .foot2 .logo {
+    display: none;
+  }
+
+  .termsP {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .partners {
+    width: 100%;
+    height: auto;
+  }
+
+  .pitems {
+    width: 100%;
+    padding: 50px;
+    justify-content: space-between;
+    color: #F8F663;
+    align-items: center;
+  }
+
+  .titems {
+    padding-top: 10px;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    color: black;
+    align-items: center;
+    padding-left: 250px;
+    padding-right: 250px;
+  }
+
+  .follow {
+    width: 100%;
+  }
+
+  .arrowleftup {
+    position: absolute;
+    bottom: 900px;
+    left: 15px;
+  }
+
+  .arrowleftdown {
+    position: absolute;
+    bottom: 370px;
+    left: 15px;
+  }
+
+  .arrowrightup {
+    position: absolute;
+    bottom: 900px;
+    right: 11px;
+  }
+
+  .arrowrightdown {
+    position: absolute;
+    bottom: 370px;
+    right: 11px;
+  }
+}
+
+/** Mobile screens **/
+@media (max-width: 768px) {
+  .footer {
+    max-width: fit-content;
+    margin: 5px;
+  }
+  .foot2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .foot2 .logo {
+    display: none;
+  }
+
+  .termsP {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .partners {
+    width: 100%;
+    height: auto;
+  }
+
+  .pitems {
+    width: 100%;
+    padding: 50px;
+    justify-content: space-between;
+    color: #F8F663;
+    align-items: center;
+  }
+
+  .titems {
+    padding-top: 10px;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    color: black;
+    align-items: center;
+    padding-left: 250px;
+    padding-right: 250px;
+  }
+
+  .follow {
+    width: 100%;
+  }
+
+  .arrowleftup {
+    position: absolute;
+    bottom: 900px;
+    left: 15px;
+  }
+
+  .arrowleftdown {
+    position: absolute;
+    bottom: 370px;
+    left: 15px;
+  }
+
+  .arrowrightup {
+    position: absolute;
+    bottom: 900px;
+    right: 11px;
+  }
+
+  .arrowrightdown {
+    position: absolute;
+    bottom: 370px;
+    right: 11px;
+  }
 }

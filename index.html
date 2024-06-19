@@ -8,6 +8,9 @@
   <link rel="stylesheet" href="general.css">
   <link rel="stylesheet" href="styles.css">
   <script defer src="script.js"></script>
+  <!--AOS imports-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <title>PayUp</title>
 </head>
 
@@ -36,7 +39,7 @@
       </header>
 
 
-      <div class="container">
+      <div class="container" id="top">
         <div class="bg-shadow-blur hero-content-box grid grid--2-cols">
           <div class="hero-text-container">
             <p class="h2">Do you have a bill?</p>
@@ -56,7 +59,7 @@
         </div>
       </div>
 
-      <div class="container">
+      <div class="container" data-aos="zoom-out-left">
         <div class="features-grid grid--4-cols">
           <div class="feature-wrapper ">
             <div class="feature-icon-wrapper feature-icon-wrapper--1">
@@ -96,7 +99,7 @@
 
 
 
-    <section class="section section--about" id="section--about">
+    <section class="section section--about" id="section--about" data-aos="flip-down">
       <div class="container container--sm">
         <div class="about-item grid grid--2-cols">
           <div>
@@ -148,7 +151,7 @@
 
 
     </section>
-    <section class="section section--our-vision" id="section--our-vision">
+    <section class="section section--our-vision" id="section--our-vision" data-aos="fade-up-left">
 
       <div class="container our-vision-wrapper bg-shadow-blur">
         <p class="our-vision-header" class="section-subtitle section-subtitle--our-vision">Our Vision</p>
@@ -179,7 +182,7 @@
 
       </div>
     </section>
-    <section class="section section--our-team" id="section--our-team">
+    <section class="section section--our-team" id="section--our-team" data-aos="fade-up-right">
       <div>
         <h5>Our Team</h5>
         <p class="team-subtitle">Meet the amazing team.</p>
@@ -274,7 +277,7 @@
         fueled by our shared dedication to innovation and unwavering determination."
       </p>
     </section>
-    <section class="section section--faq" id="section--faq">
+    <section class="section section--faq" id="section--faq" data-aos="fade-right">
       <div class="container">
         <div class="faq">
           <div class="">
@@ -336,7 +339,7 @@
 
       </div>
     </section>
-    <footer>
+    <footer data-aos="fade-up">
       <div class="footer">
         <div class="foot1">
             <p style="font-size: 96px;">Let’s Discuss</p>
@@ -355,7 +358,7 @@
                 <path d="M126.566 121V100.637H130.192V102.219C130.974 101.097 132.279 100.407 133.974 100.407C137.652 100.407 140 103.369 140 107.885C140 112.4 137.444 115.363 133.661 115.363C132.174 115.363 130.896 114.816 130.192 113.838L133.974 121H126.566ZM133.218 111.912C135.122 111.912 136.426 110.301 136.426 107.885C136.426 105.44 135.122 103.83 133.218 103.83C131.261 103.83 129.983 105.44 129.983 107.885C129.983 110.301 131.261 111.912 133.218 111.912Z" fill="#F8F663"/>
                 </svg>                
             </div>
-            <div>
+            <div class="termsP">
                 <div class="partners">
                     <div class="pitems">
                         <a href=""><p>Partners</p></a>
@@ -445,9 +448,12 @@
   </main>
   
 
-  <div class="scroll-up-box">
+  <a href="index.html#top"><div class="scroll-up-box">
     <span class="scroll-up">&uarr;</span>
-  </div>
+  </div></a>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
