@@ -41,7 +41,7 @@
 /**************************/
 /* NAVIGATION */
 /**************************/
-main{
+main {
   padding: 10px;
 }
 .main-nav {
@@ -100,14 +100,14 @@ main{
   font-size: 5.6rem;
   color: var(--color-brand);
   font-weight: 600;
-  margin-bottom: 1.6rem;
+  margin-bottom: 1.4rem;
 }
 
 .headline {
   font-size: 6.4rem;
   font-weight: 700;
   letter-spacing: 3px;
-  margin-bottom: 4.2rem;
+  margin-bottom: 3rem;
 }
 
 .subheadline {
@@ -271,7 +271,7 @@ h2 {
 
 .about-item:nth-child(2) {
   grid-template-columns: 45% 55%;
-  margin: 25rem 0;
+  margin-top: 25rem;
 }
 
 .rubix-container {
@@ -453,12 +453,14 @@ h5 {
 
 .team-desc {
   line-height: 3.2rem;
+  width: 100rem;
 }
 
 .scroll-up-box {
   cursor: pointer;
+
   border-radius: 50%;
-  border: 1px solid #000;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -467,10 +469,10 @@ h5 {
   z-index: 99;
   position: absolute;
   right: 2.5rem;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.604);
   color: black;
-  bottom: 5px;
-  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.105);
+  bottom: 18rem;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.24);
 }
 
 .bino {
@@ -479,29 +481,51 @@ h5 {
 }
 
 .avail {
-  gap: 4rem;
-  border-radius: 10px;
+  border-radius: 20px;
   padding: 20px;
-  max-width: 260px;
   background-color: var(--color-brand);
 }
 
 .avail p {
   color: var(--color-dark--3);
-  max-width: 100%;
+  max-width: 19rem;
+  font-weight: 500;
   word-wrap: break-word;
+  line-height: 32px;
+  margin-bottom: 2.5rem;
+}
+
+avail span {
+  font-weight: 600;
 }
 
 .avail button {
   display: block;
   margin-top: 10px;
+  width: 100%;
+}
+
+.avail-box {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  width: 50rem;
 }
 
 .faq {
   position: relative;
-  display: grid;
+  display: flex;
+  gap: 7.2rem;
   align-items: center;
-  grid-template-columns: 1.5fr 2fr;
+}
+
+.faq-title {
+  margin-bottom: 0.8rem;
+}
+.faq-subtitle {
+  line-height: 32px;
+  color: #fcfbfb;
+  margin-bottom: 2.4rem;
 }
 
 ul {
@@ -519,21 +543,21 @@ ul {
 .couple {
   font-size: 16px;
   color: #ffffff;
-  margin-bottom: 14px;
 }
 
 .content {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease-in;
+  margin-top: 20px;
+  line-height: 3.2rem;
+  visibility: hidden;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.3s ease, visibility 0s linear;
 }
 
 .faqActive .content {
-  max-height: 100px;
-}
-
-.faqActive .content {
-  display: block;
+  position: relative;
+  opacity: 1;
+  visibility: visible;
 }
 
 .footer-cta {
@@ -579,10 +603,8 @@ ul {
   cursor: pointer;
 }
 
-
 #section--faq {
   margin-top: 10.438rem;
-  margin
 }
 
 .footer-container {
@@ -592,8 +614,8 @@ ul {
   margin-left: 1rem;
   justify-content: space-between;
   padding: 20px;
-  background-color: #1E2329;
-  border-top: 1px solid #F8F663;
+  background-color: #1e2329;
+  border-top: 1px solid #f8f663;
   height: 100%;
 }
 
@@ -604,8 +626,7 @@ ul {
   align-items: center;
   justify-content: center;
 
-  border-right: 1px solid #F8F663;
-
+  border-right: 1px solid #f8f663;
 }
 
 .logo-foot img {
@@ -639,7 +660,7 @@ ul {
 
 .footer-nav-1 {
   width: 100%;
-  border-right: 1px solid #F8F663;
+  border-right: 1px solid #f8f663;
   height: 100%;
 }
 
@@ -653,20 +674,20 @@ ul {
 }
 
 .nav__item-1 {
-  color: #1E2329;
+  color: #1e2329;
 }
 
 .nav__item-2 {
-  color: #1E2329;
+  color: #1e2329;
 }
 
 .nav__item-3 {
-  color: #1E2329;
+  color: #1e2329;
 }
 
 .line {
   padding-left: 1px;
-  border-left: 2px solid #1E2329;
+  border-left: 2px solid #1e2329;
   max-height: 51px;
 }
 
@@ -685,7 +706,7 @@ ul {
 }
 
 .terms-1 {
-  background-color: #F8F663;
+  background-color: #f8f663;
   height: 100px;
   width: 100%;
 }
@@ -699,22 +720,20 @@ ul {
 
 .follow {
   display: flex;
-  color: #F8F663;
+  color: #f8f663;
   padding: 20px;
   justify-content: center;
   align-items: center;
-
 }
 
 .footer-socials {
   display: flex;
-  border-top: 1px solid #F8F663;
+  border-top: 1px solid #f8f663;
   height: 84px;
 }
 
 .socials p {
   margin: 0;
-
 }
 
 .twit {
@@ -744,38 +763,50 @@ ul {
   margin-top: 200px;
   width: 100%;
   height: auto;
-  border: 1px solid #F8F663;
+  border: 1px solid #f8f663;
   border-radius: 10px;
   background-color: #111417;
   display: flex;
   flex-direction: column;
+}
+
+h6 {
+  font-size: 9.6rem;
+  line-height: 32px;
+  letter-spacing: 1rem;
+}
+
+.footer-text {
+  width: 92rem;
 }
 
 .foot1 {
   width: 100%;
   height: 613px;
   text-align: center;
-  color: #F8F663;
+  color: #f8f663;
   display: flex;
+  position: relative;
   border-radius: 50px, 50px, 0px, 0px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  gap: 5rem;
 }
 
 .footbutton {
   width: 284px;
   height: 56px;
-  color: #F8F663;
+  color: #f8f663;
   background-color: #111417;
-  border: 1px solid #F8F663;
+  border: 1px solid #f8f663;
   border-radius: 10px;
   cursor: pointer;
+  font: inherit;
 }
 
 .footbutton:hover {
-  background-color: #F8F663;
+  background-color: #f8f663;
   color: #111417;
   border: 1px solid #111417;
 }
@@ -784,11 +815,11 @@ ul {
   width: 100%;
   height: auto;
   display: flex;
-  background-color: #F8F663;
+  background-color: #f8f663;
 }
 
 .foot2 a {
-  color: #F8F663;
+  color: #f8f663;
   text-decoration: none;
 }
 
@@ -796,7 +827,7 @@ ul {
   width: 218px;
   height: 218px;
   background-color: #111417;
-  border: 1px solid #F8F663;
+  border: 1px solid #f8f663;
   border-bottom-right-radius: 10px;
 }
 
@@ -805,9 +836,9 @@ ul {
   width: 1121px;
   display: flex;
   background-color: #111417;
-  border: 1px solid #F8F663;
+  border: 1px solid #f8f663;
   justify-content: space-between;
-  color: #F8F663;
+  color: #f8f663;
   align-items: center;
 }
 
@@ -816,7 +847,7 @@ ul {
   display: flex;
   padding: 100px;
   justify-content: space-between;
-  color: #F8F663;
+  color: #f8f663;
   align-items: center;
 }
 
@@ -840,7 +871,7 @@ ul {
 .follow {
   width: 175px;
   height: 174px;
-  border: 1px solid #F8F663;
+  border: 1px solid #f8f663;
   background-color: #111417;
   display: flex;
   flex-direction: column;
@@ -848,9 +879,9 @@ ul {
 
 .followtext {
   height: 50%;
-  border-bottom: 1px solid #F8F663;
+  border-bottom: 1px solid #f8f663;
   font-size: 16px;
-  color: #F8F663;
+  color: #f8f663;
   display: flex;
   text-align: center;
   align-items: center;
@@ -866,25 +897,25 @@ ul {
 
 .arrowleftup {
   position: absolute;
-  bottom: 750px;
+  top: 0px;
   left: 5px;
 }
 
 .arrowleftdown {
   position: absolute;
-  bottom: 220px;
+  bottom: 0px;
   left: 5px;
 }
 
 .arrowrightup {
   position: absolute;
-  bottom: 750px;
+  top: 0px;
   right: 5px;
 }
 
 .arrowrightdown {
   position: absolute;
-  bottom: 220px;
+  bottom: 0px;
   right: 5px;
 }
 
@@ -894,7 +925,7 @@ ul {
     max-width: fit-content;
     margin: 5px;
   }
-  .foot2{
+  .foot2 {
     display: flex;
     flex-direction: column;
   }
@@ -902,7 +933,7 @@ ul {
     display: none;
   }
 
-  .termsP{
+  .termsP {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -917,7 +948,7 @@ ul {
     width: 100%;
     padding: 50px;
     justify-content: space-between;
-    color: #F8F663;
+    color: #f8f663;
     align-items: center;
   }
 
@@ -932,7 +963,7 @@ ul {
     padding-right: 250px;
   }
 
-  .follow{
+  .follow {
     width: 100%;
   }
 
@@ -941,19 +972,19 @@ ul {
     bottom: 900px;
     left: 15px;
   }
-  
+
   .arrowleftdown {
     position: absolute;
-    bottom: 370px;
+    bottom: 100rem;
     left: 15px;
   }
-  
+
   .arrowrightup {
     position: absolute;
     bottom: 900px;
     right: 11px;
   }
-  
+
   .arrowrightdown {
     position: absolute;
     bottom: 370px;
@@ -990,7 +1021,7 @@ ul {
     width: 100%;
     padding: 50px;
     justify-content: space-between;
-    color: #F8F663;
+    color: #f8f663;
     align-items: center;
   }
 
@@ -1063,7 +1094,7 @@ ul {
     width: 100%;
     padding: 50px;
     justify-content: space-between;
-    color: #F8F663;
+    color: #f8f663;
     align-items: center;
   }
 
@@ -1105,3 +1136,4 @@ ul {
     bottom: 370px;
     right: 11px;
   }
+}

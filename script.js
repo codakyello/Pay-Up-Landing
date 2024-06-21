@@ -1,15 +1,17 @@
 const signUpEL = document.querySelector(".cta-input-wrapper .btn--dark");
 
 // Set current year
-const yearEl = document.querySelector(".year");
-const currentYear = new Date().getFullYear();
-yearEl.textContent = currentYear;
+// const yearEl = document.querySelector(".year");
+// const currentYear = new Date().getFullYear();
+// yearEl.textContent = currentYear;
 
 signUpEL.addEventListener("click", (e) => {
   e.preventDefault();
   console.log(e.currentTarget);
   document.body.classList.toggle("btn-grow");
 });
+
+console.log("Script here");
 
 ///////////////////////////////////////////////////////////
 // Smooth scrolling animation
@@ -72,22 +74,21 @@ const obs = new IntersectionObserver(
 obs.observe(sectionHeroEl);
 
 function toggleActive(section) {
-
-  let listOpt = document.querySelectorAll('.faqActive');
+  let listOpt = document.querySelectorAll(".faqActive");
   listOpt.forEach(function (item) {
-    item.classList.remove('faqActive');
+    item.classList.remove("faqActive");
   });
 
-  section.classList.add('faqActive');
+  section.classList.add("faqActive");
 }
 
 // scroll to top
-const scrollUpBox = document.querySelector('.scroll-up-box');
-const scrollUp = document.querySelector('.scroll-up');
+const scrollUpBox = document.querySelector(".scroll-up-box");
+const scrollUp = document.querySelector(".scroll-up");
 
 scrollUp.addEventListener("click", function () {
   window.scrollTo({
     top: 0,
-    behavior: "smooth"
+    behavior: "smooth",
   });
 });
