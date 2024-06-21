@@ -23,17 +23,24 @@
           <img src="./assets/images/logo.png" alt="logo">
         </div>
 
-        <nav class="main-nav">
-          <ul class="main-nav__list">
-            <li><a class="main-nav__link" href="#section--about">About</a></li>
-            <li><a class="main-nav__link" href="#section--our-vision">Vision</a></li>
-            <li><a class="main-nav__link" href="#section--our-team">Team</a></li>
-            <li><a class="main-nav__link" href="#section--contact">Contact</a></li>
-          </ul>
-        </nav>
-
-        <div class="nav__ctas-wrapper">
-          <button class="btn btn--brand btn--lg">Launch App</button>
+        <div class="main-nav__open">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div class="main-nav-wrapper">
+          <div class="main-nav__close">x</div>
+          <nav class="main-nav">
+            <ul class="main-nav__list">
+              <li><a class="main-nav__link" href="#section--about">About</a></li>
+              <li><a class="main-nav__link" href="#section--our-vision">Vision</a></li>
+              <li><a class="main-nav__link" href="#section--our-team">Team</a></li>
+              <li><a class="main-nav__link" href="#section--contact">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="nav__ctas-wrapper">
+            <button class="btn btn--brand btn--lg">Launch App</button>
+          </div>
         </div>
       </header>
 
@@ -60,7 +67,7 @@
       </div>
 
       <div class="container" data-aos="zoom-out-left">
-        <div class="features-grid grid--4-cols">
+        <div class="features-grid">
           <div class="feature-wrapper ">
             <div class="feature-icon-wrapper feature-icon-wrapper--1">
               <img class="feature-icon" src="./assets/images/icons/features/bill.svg" alt="feature icon">
@@ -103,7 +110,7 @@
 
 
 
-    <section class="section section--about" id="section--about" data-aos="flip-down">
+    <section class="section section--about" id="section--about" data-aos="flip-up">
       <div class="container container--sm">
         <div class="about-item grid grid--2-cols">
           <div>
@@ -155,7 +162,7 @@
 
 
     </section>
-    <section class="section section--our-vision" id="section--our-vision" data-aos="fade-up-left">
+    <section class="section section--our-vision" id="section--our-vision" data-aos="fade-up">
 
       <div class="container our-vision-wrapper bg-shadow-blur">
         <p class="our-vision-header" class="section-subtitle section-subtitle--our-vision">Our Vision</p>
@@ -184,7 +191,7 @@
 
       </div>
     </section>
-    <section class="section section--our-team" id="section--our-team" data-aos="fade-up-right">
+    <section class="section section--our-team" id="section--our-team" data-aos="fade-up">
       <div>
         <h5>Our Team</h5>
         <p class="team-subtitle">Meet the amazing team.</p>
@@ -279,7 +286,7 @@
         fueled by our shared dedication to innovation and unwavering determination."
       </p>
     </section>
-    <section class="section section--faq" id="section--faq" data-aos="fade-right">
+    <section class="section section--faq" id="section--faq" data-aos="fade-up">
       <div class="container">
         <div class="faq">
           <div class="avail-box">
@@ -299,37 +306,37 @@
             <p class="faq-subtitle">A couple of suggestive questions</p>
 
             <ul class="faq-list">
-              <li class="faq-item " onmouseover="toggleActive(this)">
-                <h3 class="couple">A couple of suggestive questions</h3>
+              <li class="faq-item">
+                <h3 class=" couple">A couple of suggestive questions</h3>
                 <p class="content">"We're a tight-knit team of passionate believers, relentless hard workers, and
                   fearless dreamers who
                   thrive on pushing the boundaries of what's possible. Together, we embrace challenges that others </p>
               </li>
-              <li class="faq-item" onmouseover="toggleActive(this)">
-                <h3 class="couple">A couple of suggestive questions</h3>
+              <li class="faq-item">
+                <h3 class=" couple">A couple of suggestive questions</h3>
                 <p class="content">"We're a tight-knit team of passionate believers, relentless hard workers, and
                   fearless dreamers who
                   thrive on pushing the boundaries of what's possible. Together, we embrace challenges that others </p>
               </li>
-              <li class="faq-item" onmouseover="toggleActive(this)">
-                <h3 class="couple">A couple of suggestive questions</h3>
+              <li class="faq-item">
+                <h3 class=" couple">A couple of suggestive questions</h3>
                 <p class="content">"We're a tight-knit team of passionate believers, relentless hard workers, and
                   fearless dreamers who
                   thrive on pushing the boundaries of what's possible. Together, we embrace challenges that others </p>
               </li>
-              <li class="faq-item" onmouseover="toggleActive(this)">
-                <h3 class="couple">A couple of suggestive questions</h3>
+              <li class="faq-item">
+                <h3 class=" couple">A couple of suggestive questions</h3>
                 <p class="content">"We're a tight-knit team of passionate believers, relentless hard workers, and
                   fearless dreamers who
                   thrive on pushing the boundaries of what's possible. Together, we embrace challenges that others </p>
               </li>
-              <li class="faq-item" onmouseover="toggleActive(this)">
-                <h3 class="couple">A couple of suggestive questions</h3>
+              <li class="faq-item">
+                <h3 class=" couple">A couple of suggestive questions</h3>
                 <p class="content">"We're a tight-knit team of passionate believers, relentless hard workers, and
                   fearless dreamers who
                   thrive on pushing the boundaries of what's possible. Together, we embrace challenges that others </p>
               </li>
-              <li class="faq-item" onmouseover="toggleActive(this)">
+              <li class="faq-item">
                 <h3 class="couple">A couple of suggestive questions</h3>
                 <p class="content">"We're a tight-knit team of passionate believers, relentless hard workers, and
                   fearless dreamers who
@@ -475,6 +482,7 @@
       <span class="scroll-up">&uarr;</span>
     </div>
   </a>
+  <div class="overlay"></div>
   <script>
     AOS.init();
   </script>

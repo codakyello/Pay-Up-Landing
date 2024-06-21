@@ -20,6 +20,8 @@ const scrollEl = document.querySelector(".scroll-up");
 
 const faqEl = document.querySelector(".faq-list");
 
+const faqItems = document.querySelectorAll(".faq-item");
+
 // Write the scrollup functionality here.
 
 allLinks.forEach(function (link) {
@@ -72,18 +74,47 @@ const obs = new IntersectionObserver(
 );
 obs.observe(sectionHeroEl);
 
-// function toggleActive(section) {
-//   let listOpt = document.querySelectorAll(".faqActive");
-//   listOpt.forEach(function (item) {
+function toggleActive(section) {
+  let listOpt = document.querySelectorAll(".faqActive");
+  listOpt.forEach(function (item) {
+    item.classList.remove("faqActive");
+  });
+
+  section.classList.add("faqActive");
+}
+
+// faqEl.addEventListener("mouseover", (e) => {
+//   faqItems.forEach((item, i) => {
+//     console.log("ready");
 //     item.classList.remove("faqActive");
 //   });
 
-//   section.classList.add("faqActive");
-// }
+//   console.log(e.target);
+//   e.target.classList.add("faqActive");
+// });
+const faqList = document.querySelector(".faq-list");
 
-console.log(faqEl);
-faqEl.addEventListener("click", () => {
-  console.log("on mouse over");
+// Event delegation: Listen for mouseover and mouseout events on the faq-list
+faqList.addEventListener("mouseover", function (event) {
+  const target = event.target;
+
+  // Check if the event target is a question (h3 element with class 'couple')
+  if (target.matches(".faq-item h3.couple")) {
+    // Add .faqActive class to the parent faq-item
+    const faqItem = target.closest(".faq-item");
+    faqItem.classList.add("faqActive");
+  }
+});
+
+faqList.addEventListener("mouseout", function (event) {
+  const target = event.target;
+
+  // Check if the event target is a question (h3 element with class 'couple')
+  if (target.matches(".faq-item h3.couple")) {
+    // Remove .faqActive class from the parent faq-item
+    const faqItem = target.closest(".faq-item");
+    faqItem.classList.remove("faqActive");
+  }
 });
 
 // scroll to top
@@ -96,3 +127,21 @@ scrollUp.addEventListener("click", function () {
     behavior: "smooth",
   });
 });
+
+// Main nav toggle
+const mainNavOpen = document.querySelector(".main-nav__open");
+const mainNavClose = document.querySelector(".main-nav__close");
+const mainNavWrapper = document.querySelector(".main-nav-wrapper");
+const overlay = document.querySelector(".overlay");
+
+mainNavOpen.addEventListener("click", toggleNav);
+mainNavClose.addEventListener("click", toggleNav);
+overlay.addEventListener("click", toggleNav);
+
+function toggleNav() {
+  mainNavWrapper.classList.toggle("active");
+  overlay.classList.toggle("overlay--show");
+
+  const isMenuActive = document.body.getAttribute("data-menu");
+  document.body.setAttribute("data-menu", isMenuActive ? "" : "active");
+}
