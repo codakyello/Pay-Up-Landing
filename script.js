@@ -11,14 +11,14 @@ signUpEL.addEventListener("click", (e) => {
   document.body.classList.toggle("btn-grow");
 });
 
-console.log("Script here");
-
 ///////////////////////////////////////////////////////////
 // Smooth scrolling animation
 
 const allLinks = document.querySelectorAll("a:link");
 
 const scrollEl = document.querySelector(".scroll-up");
+
+const faqEl = document.querySelector(".faq-list");
 
 // Write the scrollup functionality here.
 
@@ -54,7 +54,6 @@ const sectionHeroEl = document.querySelector(".section--hero");
 const obs = new IntersectionObserver(
   function (entries) {
     const ent = entries[0];
-    console.log(ent);
 
     if (ent.isIntersecting === false) {
       document.body.classList.add("sticky");
@@ -73,14 +72,19 @@ const obs = new IntersectionObserver(
 );
 obs.observe(sectionHeroEl);
 
-function toggleActive(section) {
-  let listOpt = document.querySelectorAll(".faqActive");
-  listOpt.forEach(function (item) {
-    item.classList.remove("faqActive");
-  });
+// function toggleActive(section) {
+//   let listOpt = document.querySelectorAll(".faqActive");
+//   listOpt.forEach(function (item) {
+//     item.classList.remove("faqActive");
+//   });
 
-  section.classList.add("faqActive");
-}
+//   section.classList.add("faqActive");
+// }
+
+console.log(faqEl);
+faqEl.addEventListener("click", () => {
+  console.log("on mouse over");
+});
 
 // scroll to top
 const scrollUpBox = document.querySelector(".scroll-up-box");
