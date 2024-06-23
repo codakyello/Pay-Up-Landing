@@ -95,27 +95,28 @@ function toggleActive(section) {
 const faqList = document.querySelector(".faq-list");
 
 // Event delegation: Listen for mouseover and mouseout events on the faq-list
-faqList.addEventListener("mouseover", function (event) {
+faqList.addEventListener("click", function (event) {
   const target = event.target;
+  console.log(target);
 
   // Check if the event target is a question (h3 element with class 'couple')
-  if (target.matches(".faq-item h3.couple")) {
+  if (target.matches(".faq-item") || target.matches(".faq-title")) {
     // Add .faqActive class to the parent faq-item
     const faqItem = target.closest(".faq-item");
-    faqItem.classList.add("faqActive");
+    faqItem.classList.toggle("faqActive");
   }
 });
 
-faqList.addEventListener("mouseout", function (event) {
-  const target = event.target;
+// faqList.addEventListener("mouseout", function (event) {
+//   const target = event.target;
 
-  // Check if the event target is a question (h3 element with class 'couple')
-  if (target.matches(".faq-item h3.couple")) {
-    // Remove .faqActive class from the parent faq-item
-    const faqItem = target.closest(".faq-item");
-    faqItem.classList.remove("faqActive");
-  }
-});
+//   // Check if the event target is a question (h3 element with class 'couple')
+//   if (target.matches(".faq-item") || target.matches(".faq-title")) {
+//     // Remove .faqActive class from the parent faq-item
+//     const faqItem = target.closest(".faq-item");
+//     faqItem.classList.remove("faqActive");
+//   }
+// });
 
 // scroll to top
 const scrollUpBox = document.querySelector(".scroll-up-box");

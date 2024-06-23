@@ -566,7 +566,7 @@ h5 {
   background-color: #fff;
   color: #000;
 
-  bottom: 18rem;
+  bottom: 15rem;
   box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.24);
 }
 
@@ -602,9 +602,12 @@ h5 {
 
 .avail-box {
   display: flex;
+  position: absolute;
+  top: 10rem;
   flex-direction: column;
   gap: 3rem;
   width: 30rem;
+  margin-right: 7.2rem;
 }
 
 .faq {
@@ -615,7 +618,8 @@ h5 {
 }
 
 .faq-box {
-  flex: 1;
+  width: 82rem;
+  margin-left: auto;
 }
 .faq-title {
   margin-bottom: 0.8rem;
@@ -634,12 +638,12 @@ ul {
   cursor: pointer;
   gap: 4rem;
   border-radius: 10px;
-  padding: 25px;
+  padding: 15px;
   background-color: #1e2329;
   margin-top: 5px;
 }
 
-.couple {
+.faq-title {
   font-size: 16px;
   color: #ffffff;
 }
@@ -647,14 +651,18 @@ ul {
 .content {
   margin-top: 20px;
   line-height: 3.2rem;
-  visibility: hidden;
-  position: absolute;
-  opacity: 0;
-  transition: opacity 0.3s ease, visibility 0s linear;
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  overflow-y: auto;
+}
+
+.content::-webkit-scrollbar {
+  display: none;
 }
 
 .faqActive .content {
-  position: relative;
+  max-height: 150px;
   opacity: 1;
   visibility: visible;
 }
@@ -700,10 +708,6 @@ ul {
   max-width: 150px;
   padding: 10px;
   cursor: pointer;
-}
-
-#section--faq {
-  margin-top: 10.438rem;
 }
 
 .footer-container {
@@ -929,10 +933,10 @@ h6 {
   border: 1px solid #f8f663;
   border-bottom-right-radius: 10px;
 }
-
+.termsP {
+  flex: 1;
+}
 .partners {
-  height: 174px;
-  width: 1121px;
   display: flex;
   background-color: #111417;
   border: 1px solid #f8f663;
@@ -944,7 +948,8 @@ h6 {
 .pitems {
   width: 100%;
   display: flex;
-  padding: 100px;
+
+  padding: 100px 200px;
   justify-content: space-between;
   color: #f8f663;
   align-items: center;
@@ -969,7 +974,7 @@ h6 {
 
 .follow {
   width: 175px;
-  height: 174px;
+  height: 218px;
   border: 1px solid #f8f663;
   background-color: #111417;
   display: flex;
@@ -1024,17 +1029,19 @@ h6 {
     max-width: fit-content;
     margin: 5px;
   }
+
   .foot2 {
     display: flex;
     flex-direction: column;
   }
+
   .foot2 .logo {
     display: none;
   }
 
   .termsP {
-    width: 100%;
     display: flex;
+
     flex-direction: column;
   }
 
@@ -1181,6 +1188,7 @@ h6 {
   .termsP {
     width: 100%;
     display: flex;
+
     flex-direction: column;
   }
 
