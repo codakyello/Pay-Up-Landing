@@ -5,11 +5,35 @@
   margin: 0;
   box-sizing: border-box;
 }
+:root {
+  --font-base: 1.6rem;
+  --font-scale: 1.23;
+  --fs-body: calc(var(--font-base) * var(--font-scale));
+  --fs-h5: calc(var(--fs-body) * var(--font-scale));
+  --fs-h4: calc(var(--fs-h5) * var(--font-scale));
+  --fs-h3: calc(var(--fs-h4) * var(--font-scale));
+  --fs-h2: calc(var(--fs-h3) * var(--font-scale));
+  --fs-h1: calc(var(--fs-h2) * (var(--font-scale) * 1.5));
+}
+
+@media (max-width: 768px) {
+  :root {
+    --font-base: 1.55rem;
+  }
+}
+@media (max-width: 525px) {
+  :root {
+    --font-scale: 1.2;
+    --font-base: 1.4rem;
+  }
+}
 
 .logo {
   width: 8.4rem;
 }
-
+body {
+  font-size: var(--fs-body);
+}
 /**************************/
 /* HEADER */
 /**************************/
@@ -163,7 +187,8 @@ body[data-menu="active"] .overlay {
 }
 
 .h2 {
-  font-size: 5.6rem;
+  /* font-size: 5.6rem; */
+  font-size: var(--fs-h2);
   color: var(--color-brand);
   font-weight: 600;
   margin-bottom: 1.4rem;
@@ -171,6 +196,7 @@ body[data-menu="active"] .overlay {
 
 .headline {
   font-size: 6.4rem;
+  font-size: var(--fs-h1);
   font-weight: 700;
   letter-spacing: 3px;
   margin-bottom: 3rem;
